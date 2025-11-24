@@ -1,20 +1,35 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: Inter;
     background-color: #d3d3d3;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     overflow-x: hidden;
 }
 
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: #722F37;
+    color: white;
+}
+
 #header-content {
+    width: 100%;
+    height: inherit;
     display: flex;
     align-items: center;
-    padding: 10px;
-    color: white;
-    background-color: #722F37;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#header-content .menu {
+    display: none;
 }
 
 .header-left {
@@ -23,22 +38,15 @@ body {
     font-weight: bold;
     font-size: 25px;
     color: rgb(212, 203, 203);
-    position: relative;
 }
 
 .header-left span {
-    position: absolute;
-    left: 105px;
+    display: inline-block;
+    transform: translateX(-24px);
 }
 
 .header-left img {
     width: 130px;
-    max-width: 100%;
-    height: auto;
-}
-
-.header-mid {
-    margin-left: 280px;
 }
 
 .header-mid nav ul {
@@ -55,20 +63,30 @@ body {
 
 .header-rigth {
     display: flex;
-    margin-left: 250px;
 }
 
-.header-rigth button {
+.header-rigth .input {
+    height: 36px;
     display: flex;
-    cursor: pointer;
-    color: white;
-    border: none;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+
     background-color: #ac616a;
     border-radius: 5px;
-    padding: 0;
-    line-height: 0.1;
-    padding-left: 10px;
-    padding-right: 155px;
+}
+
+
+.header-rigth .input .search {
+    height: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.header-rigth .input .search::placeholder {
+    color: #fff;
 }
 
 .header-rigth a {
@@ -91,6 +109,9 @@ body {
 
 #home {
     display: flex;
+
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #home .home-left {
@@ -180,4 +201,28 @@ body {
     width: 200px;
     max-width: 100%;
     height: auto;
+}
+
+
+@media(max-width: 767px) {
+    header {
+        width: 100%;
+    }
+
+    header #header-content {
+        max-width: 100%;
+        padding: 0 32px;
+    }
+
+    #header-content .header-mid nav {
+        display: none;
+    }
+
+    #header-content .header-rigth {
+        display: none;
+    }
+
+    #header-content .menu {
+        display: flex;
+    }
 }
