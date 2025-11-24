@@ -1,0 +1,167 @@
+
+
+body {
+    font-family: Inter;
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#header-content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    background-color: #722F37;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(212, 203, 203);
+    position: relative;
+}
+
+.header-left span {
+    position: absolute;
+    left: 105px;
+}
+
+.header-left img {
+    width: 130px;
+    max-width: 100%;
+    height: auto;
+}
+
+.header-mid {
+    margin-left: 280px;
+}
+
+.header-mid nav ul {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.header-mid nav ul li:hover {
+    color: rgb(211, 146, 146);
+}
+
+.header-rigth {
+    display: flex;
+    margin-left: 250px;
+}
+
+.header-rigth button {
+    display: flex;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: #ac616a;
+    border-radius: 5px;
+    padding: 0;
+    line-height: 0.1;
+    padding-left: 10px;
+    padding-right: 155px;
+}
+
+.header-rigth a {
+    font-size: 20px;
+    padding: 15px 5px;
+}
+
+.header-rigth p {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.header-rigth img {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+#home {
+    display: flex;
+}
+
+#home .home-left {
+    position: relative;
+    padding: 100px;
+    background-color: #c7c1c1;
+    flex: 1;
+    font-weight: 500;
+    font-size: 21.5px;
+}
+
+.home-left h1 {
+    font-size: 70px;
+    margin-bottom: 3px;
+}
+
+.home-left p {
+    font-weight: 600;
+    margin-top: 9px;
+}
+
+.home-top {
+    margin-top: -35px;
+}
+
+.home-left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+}
+
+.home-rigth {
+    margin-top: 20px;
+    margin-left: 550px;
+    flex: 1;
+    position: absolute;
+    z-index: 1;
+    color: white;
+}
+
+.home-rigth img {
+    width: 850px;
+    max-width: 100%;
+    height: auto;
+}
+
+#products {
+    background-color: white;
+}
+
+.products-top {
+    margin-top: 140px;
+}
+
+.products-top h2 {
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.products-sample {
+    display: flex;
+}
+
+.RTX3050 {
+    align-items: center;
+    background-color: #d3c3c5;
+    width: 200px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
